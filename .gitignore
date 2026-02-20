@@ -1,2 +1,21 @@
+# Секреты
 .env
+*.key
+*.pem
+
+# Логи/временное
 logs/
+*.log
+*.tmp
+temp_*
+
+# IDE/ОС
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# OS архивы
+*.zip
+*.tar.gz
+*.rar
