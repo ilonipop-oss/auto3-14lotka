@@ -1,28 +1,35 @@
 #!/bin/bash
 cd ~/autoPilotka
 
-echo "🚀 TÜRKDE START: $(date)"
-echo "🦀 Скачиваем igareck WHITE-CIDR-RU-checked.txt..."
+echo "🚀 TÜRK+DEUTSCH START: $(date)"
+echo "🦀 igareck WHITE-CIDR-RU → TÜRKİYE+DEUTSCHLAND..."
 
-# ✅ ТОЛЬКО igareck по закону
 curl -sL "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt" -o /tmp/white_cidr.txt
 
-echo "🦃 Фильтр ТУРЦИЯ only..."
-grep -iE "Turkey|🇹🇷|tr-|turk|istanbul|ankara|izmir|turkiye" /tmp/white_cidr.txt > turk_only.txt || {
-    echo "❌ ТУРЦИЯ НЕ НАЙДЕНА в igareck!"
-    exit 1
-}
+# 🦃 TÜRKİYE FILTER
+echo "🦃 Фильтр ТУРЦИЯ..."
+grep -iE "Turkey|🇹🇷|tr-|turk|istanbul|ankara|izmir|turkiye" /tmp/white_cidr.txt > turk.txt || true
 
-TURK_COUNT=$(wc -l < turk_only.txt)
-echo "✅ $TURK_COUNT ТУРЕЦКИХ VLESS! $(date)"
+# 🇩🇪 DEUTSCHLAND FILTER  
+echo "🇩🇪 Фильтр ГЕРМАНИЯ..."
+grep -iE "Germany|🇩🇪|de-|berlin|frankfurt|munich|deutschland|bundesrepublik" /tmp/white_cidr.txt > deutsch.txt || true
 
-# Очистка мусора
-sed -i 's|vless://vless://*|vless://|g; s|hiddifyng://||g' turk_only.txt
+# 🔥 МЕРЖ TÜRK+DEUTSCH
+cat turk.txt deutsch.txt > all_eu.txt
 
-# Юсуф hotdog
-echo "# 🦃 İGÖRЬKA TÜRK-ONLY $(date)" > yusuf_hotdog_reality.txt
-echo "✅ $TURK_COUNT ТУРЕЦКИХ VLESS" >> yusuf_hotdog_reality.txt
-cat turk_only.txt >> yusuf_hotdog_reality.txt
+TURK_COUNT=$(grep -c "Turkey\|🇹🇷\|tr-" all_eu.txt || echo 0)
+DEUTSCH_COUNT=$(grep -c "Germany\|🇩🇪\|de-" all_eu.txt || echo 0)
+TOTAL_COUNT=$(wc -l < all_eu.txt)
 
-rm -f /tmp/white_cidr.txt turk_only.txt
-echo "🌭 Юсуф готов: $TURK_COUNT 🇹🇷 хотдогов!"
+echo "✅ 🦃 TÜRK: $TURK_COUNT | 🇩🇪 DEUTSCH: $DEUTSCH_COUNT | 🔥 TOTAL: $TOTAL_COUNT"
+
+# 🔨 ЧИСТКА
+sed -i 's|vless://vless://*|vless://|g; s|hiddifyng://||g' all_eu.txt
+
+# 📤 ЮСУФ + ХАНС HOTDOGS
+echo "# 🦃🇩🇪 İGÖRЬKA + HANS EU-ONLY $(date)" > yusuf_hotdog_reality.txt
+echo "✅ 🦃$TURK_COUNT TÜRK + 🇩🇪$DEUTSCH_COUNT DEUTSCH = 🔥$TOTAL_COUNT VLESS" >> yusuf_hotdog_reality.txt
+cat all_eu.txt >> yusuf_hotdog_reality.txt
+
+rm -f /tmp/white_cidr.txt turk.txt deutsch.txt all_eu.txt
+echo "🌭🥨 ЮСУФ+ХАНС: $TOTAL_COUNT ЕС хотдогов! $(date)"
