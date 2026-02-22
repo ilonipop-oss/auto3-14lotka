@@ -2,34 +2,24 @@
 cd ~/autoPilotka
 
 echo "🚀 TÜRK+DEUTSCH START: $(date)"
-echo "🦀 igareck WHITE-CIDR-RU → TÜRKİYE+DEUTSCHLAND..."
 
-curl -sL "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt" -o /tmp/white_cidr.txt
+# 🛡️ КРИТИЧЕСКИЙ ФИКС: проверяем curl
+curl -sL "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt" -o /tmp/white_cidr.txt || {
+    echo "❌ igareck DOWN! Используем backup..."
+    curl -sL "https://raw.githubusercontent.com/ilonipop-oss/auto3-14lotka/main/yusuf_hotdog_6h_live.txt" -o /tmp/white_cidr.txt
+}
 
-# 🦃 TÜRKİYE FILTER
-echo "🦃 Фильтр ТУРЦИЯ..."
-grep -iE "Turkey|🇹🇷|tr-|turk|istanbul|ankara|izmir|turkiye" /tmp/white_cidr.txt > turk.txt || true
+# ✅ ЕС фильтр (Turkey+Germany)
+grep -iE "(Turkey|Germany|🇹🇷|🇩🇪|tr-|de-|berlin|istanbul)" /tmp/white_cidr.txt > eu_filtered.txt
 
-# 🇩🇪 DEUTSCHLAND FILTER  
-echo "🇩🇪 Фильтр ГЕРМАНИЯ..."
-grep -iE "Germany|🇩🇪|de-|berlin|frankfurt|munich|deutschland|bundesrepublik" /tmp/white_cidr.txt > deutsch.txt || true
+# 🎯 ТОП-100 IP (самые живучие)
+grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' eu_filtered.txt | sort | uniq -c | sort -nr | head -100 | awk '{print $2}' > top100_ips.txt
+grep -F -f top100_ips.txt eu_filtered.txt > yusuf_hotdog_reality.txt
 
-# 🔥 МЕРЖ TÜRK+DEUTSCH
-cat turk.txt deutsch.txt > all_eu.txt
+TOTAL=$(wc -l < yusuf_hotdog_reality.txt)
+echo "# 🦃🇩🇪 TOP-100 EU VLESS $(date)" > yusuf_hotdog_reality.txt
+echo "✅ 🔥 $TOTAL TOP-100 LIVE VLESS" >> yusuf_hotdog_reality.txt
+cat eu_filtered.txt >> yusuf_hotdog_reality.txt
 
-TURK_COUNT=$(grep -c "Turkey\|🇹🇷\|tr-" all_eu.txt || echo 0)
-DEUTSCH_COUNT=$(grep -c "Germany\|🇩🇪\|de-" all_eu.txt || echo 0)
-TOTAL_COUNT=$(wc -l < all_eu.txt)
-
-echo "✅ 🦃 TÜRK: $TURK_COUNT | 🇩🇪 DEUTSCH: $DEUTSCH_COUNT | 🔥 TOTAL: $TOTAL_COUNT"
-
-# 🔨 ЧИСТКА
-sed -i 's|vless://vless://*|vless://|g; s|hiddifyng://||g' all_eu.txt
-
-# 📤 ЮСУФ + ХАНС HOTDOGS
-echo "# 🦃🇩🇪 İGÖRЬKA + HANS EU-ONLY $(date)" > yusuf_hotdog_reality.txt
-echo "✅ 🦃$TURK_COUNT TÜRK + 🇩🇪$DEUTSCH_COUNT DEUTSCH = 🔥$TOTAL_COUNT VLESS" >> yusuf_hotdog_reality.txt
-cat all_eu.txt >> yusuf_hotdog_reality.txt
-
-rm -f /tmp/white_cidr.txt turk.txt deutsch.txt all_eu.txt
-echo "🌭🥨 ЮСУФ+ХАНС: $TOTAL_COUNT ЕС хотдогов! $(date)"
+rm -f /tmp/white_cidr.txt eu_filtered.txt top100_ips.txt
+echo "✅ 🔥 $TOTAL ЕС хотдогов готово!"
