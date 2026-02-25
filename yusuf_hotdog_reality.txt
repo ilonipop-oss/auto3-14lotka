@@ -1,8 +1,7 @@
-# 🦃🇩🇪 TOP-100 EU VLESS Ср 25 фев 2026 20:20:02 +07
-✅ 🔥 6 TOP-100 LIVE VLESS
-vless://30c04389-bbcb-431f-9d47-a8ad24406bd4@212.233.75.220:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=max.ru&pbk=eQXsYV276NoiN9SDwuloNrJkX-NU2tDtkMK6ntKQwlg&sid=df13327f2677fc90#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20VK
-vless://30c04389-bbcb-431f-9d47-a8ad24406bd4@37.139.33.216:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=eQXsYV276NoiN9SDwuloNrJkX-NU2tDtkMK6ntKQwlg&security=reality&sid=e9967082664482b7&sni=max.ru&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20VK
-vless://400c1f85-9d3a-444a-8a50-81b11f3b4c20@84.201.128.76:443?encryption=none&flow=xtls-rprx-vision&fp=random&pbk=66kZLshj9fxAIQA7NsABohNwgiOcY71enc6as_Frqw0&security=reality&sid=3c1523da43287ec4&sni=smartcaptcha.yandexcloud.net&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20YA
+# 🦃🇩🇪 TOP-100 EU VLESS Ср 25 фев 2026 20:40:01 +07
+✅ 🔥 5 TOP-100 LIVE VLESS
+vless://c501c66b-c6c2-456b-b604-80393b83d67f@37.139.34.83:47051?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=api.security.max.ru&pbk=y8f0sznQFqvSOPFcFvPcQFfXbz0Ag10ySB4A88OXMy0&sid=effab4f3a0ed698e#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20VK
 vless://53fa2131-611e-413f-8b1a-3aed45529a52@158.160.171.167:443?type=tcp&security=reality&sni=84.img.avito.st&fp=chrome&flow=xtls-rprx-vision&pbk=w8WltGLAGvOi6tsvnTQ80309byZo0Wo_Gs3fr8F6ixE&sid=331a54c7ab4b#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5BIPv4%2B6%5D%20%5B%2ACIDR%5D%20YA
 vless://733b33b0-390b-482e-8ae1-9dd0827b527e@212.233.120.249:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=max.ru&pbk=0io-AUjjlClUtSsOoVf6JEkv9v2f3gTt-zSQIsc6Ohw&sid=ef45ab75db04&spx=%2F#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D%20VK
-vless://eca8793f-9fc8-4ca1-bcc3-4ca54a5a43d3@212.233.120.249:4443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=9Wz0qUfLsxRf96Baaay8FfFD77c1FvJ7Ei4bS0cgE2I&sid=39074fea5d618b&spx=%2F#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D%20VK
+vless://c501c66b-c6c2-456b-b604-80393b83d67f@37.139.34.83:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=sun6-21.userapi.com&pbk=Uwz6QjH6QTonKba4RVv35LNmhJLA6c2kxtI2nXRQWTg&sid=2c60d62e1d95c07a#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D%20VK
+vless://a001c9c4-ece2-4dc1-9658-cbad90fcd2e0@178.154.222.55:8080?encryption=none&fp=chrome&pbk=w28tNIWZCfW4X9aQDLwXECK3pU59zihJ0GIMA13u5X8&security=reality&sni=max.ru&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D%20YA
