@@ -19,3 +19,12 @@ proxy-groups:
     type: select
     proxies:
       - "EU-TOP7-222ms"
+
+rules:
+  # ✅ РОССИЙСКИЕ СЕРВИСЫ → ДИРЕКТ (скорость!)
+  - DOMAIN-SUFFIX,yandex.ru,DIRECT
+  - DOMAIN-SUFFIX,vk.com,DIRECT
+  - DOMAIN-SUFFIX,mail.ru,DIRECT
+  
+  # ✅ ВСЁ ОСТАЛЬНОЕ → ПРОКСИ
+  - MATCH,MOBILE
