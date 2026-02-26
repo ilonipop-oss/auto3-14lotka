@@ -1,26 +1,30 @@
 proxy-providers:
-  reality_ru:
+  reality_top7:
     type: http
     url: "https://ilonipop-oss.github.io/auto3-14lotka/reality-mobile.txt"
-    interval: 1800  # 30мин синхронизация
+    interval: 1800
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
+      interval: 300
 
 proxy-groups:
-  - name: "STABLE-150ms"
+  - name: "EU-TOP7-222ms"
     type: url-test
-    tolerance: 150
+    tolerance: 222
     interval: 600
-    use: [reality_ru]  # Только Игорёк!
+    use: [reality_top7]
 
   - name: "MOBILE"
     type: select
     proxies:
-      - "STABLE-150ms"  # Только рабочий Игорёк!
-      # ❌ DIRECT МЁРТВ!
+      - "EU-TOP7-222ms"
 
 rules:
+  # ✅ РОССИЙСКИЕ СЕРВИСЫ → ДИРЕКТ (скорость!)
   - DOMAIN-SUFFIX,yandex.ru,DIRECT
   - DOMAIN-SUFFIX,vk.com,DIRECT
+  - DOMAIN-SUFFIX,mail.ru,DIRECT
+  
+  # ✅ ВСЁ ОСТАЛЬНОЕ → ПРОКСИ
   - MATCH,MOBILE
