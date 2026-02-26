@@ -1,62 +1,26 @@
 proxy-providers:
-  # Твоя VLESS пачка → группа Z01M-PRIVATE
-  z01m-private:
+  reality_ru:
     type: http
-    url: "https://example.com/your-vless-sub.txt"  # ЗАМЕНИ НА СВОЮ ССЫЛКУ!
-    path: ./z01m-private.txt
-    interval: 1800  # 30мин
+    url: "https://ilonipop-oss.github.io/auto3-14lotka/reality-mobile.txt"
+    interval: 1800  # 30мин синхронизация
     health-check:
       enable: true
-      url: https://www.google.com/generate_204
-      interval: 300
-
-  cidr_ru:
-    type: file
-    path: ./mobile-cidr.txt
-    interval: 3600
-  reality_ru:
-    type: file
-    path: ./reality-mobile.txt
-    interval: 1800  # Синхронизируем с GitHub cron 30мин
+      url: https://www.gstatic.com/generate_204
 
 proxy-groups:
-  - name: "🛡️ Z01M-PRIVATE"
-    type: url-test
-    tolerance: 200
-    interval: 300
-    use: [z01m-private]
-    proxies:
-      - DIRECT  # fallback
-
-  - name: "⚡ FAST-50ms"
-    type: url-test
-    tolerance: 50
-    interval: 300
-    use: [cidr_ru]
-    
-  - name: "🧠 STABLE-150ms"
+  - name: "STABLE-150ms"
     type: url-test
     tolerance: 150
     interval: 600
-    lazy: true
-    use: [reality_ru]
+    use: [reality_ru]  # Только Игорёк!
 
-  - name: "🐌 ROCK-300ms"
-    type: url-test
-    tolerance: 300
-    interval: 1800
-    use: [cidr_ru]
-
-  - name: "📱 MOBILE-SELECT"
+  - name: "MOBILE"
     type: select
     proxies:
-      - "🛡️ Z01M-PRIVATE"  # ТВОЯ ПРЯМО В ТОП!
-      - "⚡ FAST-50ms"
-      - "🧠 STABLE-150ms"
-      - "🐌 ROCK-300ms"
-      - DIRECT
+      - "STABLE-150ms"  # Только рабочий Игорёк!
+      # ❌ DIRECT МЁРТВ!
 
 rules:
   - DOMAIN-SUFFIX,yandex.ru,DIRECT
   - DOMAIN-SUFFIX,vk.com,DIRECT
-  - MATCH,📱 MOBILE-SELECT
+  - MATCH,MOBILE
