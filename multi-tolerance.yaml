@@ -1,0 +1,39 @@
+proxy-providers:
+  cidr_ru:
+    type: file
+    path: ./mobile-cidr.txt
+    interval: 3600
+  reality_ru:
+    type: file
+    path: ./reality-mobile.txt
+    interval: 3600
+
+proxy-groups:
+  - name: "⚡ FAST-50ms"
+    type: url-test
+    tolerance: 50
+    interval: 300
+    use: [cidr_ru]
+  - name: "🧠 STABLE-150ms"
+    type: url-test
+    tolerance: 150
+    interval: 600
+    lazy: true
+    use: [reality_ru]
+  - name: "🐌 ROCK-300ms"
+    type: url-test
+    tolerance: 300
+    interval: 1800
+    use: [cidr_ru]
+  - name: "📱 MOBILE-SELECT"
+    type: select
+    proxies:
+      - "⚡ FAST-50ms"
+      - "🧠 STABLE-150ms"
+      - "🐌 ROCK-300ms"
+      - DIRECT
+
+rules:
+  - DOMAIN-SUFFIX,yandex.ru,DIRECT
+  - DOMAIN-SUFFIX,vk.com,DIRECT
+  - MATCH,📱 MOBILE-SELECT
