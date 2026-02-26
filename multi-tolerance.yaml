@@ -1,39 +1,21 @@
 proxy-providers:
-  cidr_ru:
-    type: file
-    path: ./mobile-cidr.txt
-    interval: 3600
-  reality_ru:
-    type: file
-    path: ./reality-mobile.txt
-    interval: 3600
+  reality_top7:
+    type: http
+    url: "https://ilonipop-oss.github.io/auto3-14lotka/reality-mobile.txt"
+    interval: 1800
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
 
 proxy-groups:
-  - name: "⚡ FAST-50ms"
+  - name: "EU-TOP7-222ms"
     type: url-test
-    tolerance: 50
-    interval: 300
-    use: [cidr_ru]
-  - name: "🧠 STABLE-150ms"
-    type: url-test
-    tolerance: 150
+    tolerance: 222
     interval: 600
-    lazy: true
-    use: [reality_ru]
-  - name: "🐌 ROCK-300ms"
-    type: url-test
-    tolerance: 300
-    interval: 1800
-    use: [cidr_ru]
-  - name: "📱 MOBILE-SELECT"
+    use: [reality_top7]
+
+  - name: "MOBILE"
     type: select
     proxies:
-      - "⚡ FAST-50ms"
-      - "🧠 STABLE-150ms"
-      - "🐌 ROCK-300ms"
-      - DIRECT
-
-rules:
-  - DOMAIN-SUFFIX,yandex.ru,DIRECT
-  - DOMAIN-SUFFIX,vk.com,DIRECT
-  - MATCH,📱 MOBILE-SELECT
+      - "EU-TOP7-222ms"
