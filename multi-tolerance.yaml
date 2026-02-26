@@ -1,4 +1,15 @@
 proxy-providers:
+  # Твоя VLESS пачка → группа Z01M-PRIVATE
+  z01m-private:
+    type: http
+    url: "https://example.com/your-vless-sub.txt"  # ЗАМЕНИ НА СВОЮ ССЫЛКУ!
+    path: ./z01m-private.txt
+    interval: 1800  # 30мин
+    health-check:
+      enable: true
+      url: https://www.google.com/generate_204
+      interval: 300
+
   cidr_ru:
     type: file
     path: ./mobile-cidr.txt
@@ -6,28 +17,40 @@ proxy-providers:
   reality_ru:
     type: file
     path: ./reality-mobile.txt
-    interval: 3600
+    interval: 1800  # Синхронизируем с GitHub cron 30мин
 
 proxy-groups:
+  - name: "🛡️ Z01M-PRIVATE"
+    type: url-test
+    tolerance: 200
+    interval: 300
+    use: [z01m-private]
+    proxies:
+      - DIRECT  # fallback
+
   - name: "⚡ FAST-50ms"
     type: url-test
     tolerance: 50
     interval: 300
     use: [cidr_ru]
+    
   - name: "🧠 STABLE-150ms"
     type: url-test
     tolerance: 150
     interval: 600
     lazy: true
     use: [reality_ru]
+
   - name: "🐌 ROCK-300ms"
     type: url-test
     tolerance: 300
     interval: 1800
     use: [cidr_ru]
+
   - name: "📱 MOBILE-SELECT"
     type: select
     proxies:
+      - "🛡️ Z01M-PRIVATE"  # ТВОЯ ПРЯМО В ТОП!
       - "⚡ FAST-50ms"
       - "🧠 STABLE-150ms"
       - "🐌 ROCK-300ms"
