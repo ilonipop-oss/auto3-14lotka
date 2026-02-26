@@ -1,0 +1,30 @@
+name: Igorёk BLACKLIST (no RU/AM)
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # 30мин
+  workflow_dispatch:
+
+jobs:
+  blacklist:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Blacklist RU/AM
+      run: |
+        curl -sL https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt > igor-all.txt
+        
+        # 🖤 КИК: только RU/AM
+        grep -vE "(🇷🇺|Russia|🇦🇲|Armenia|rostelecom|mts|beeline|МТС|Билайн)" igor-all.txt > reality-mobile.txt
+        
+        NEW=$(wc -l < reality-mobile.txt)
+        OLD=$(wc -l < reality-mobile.txt 2>/dev/null || echo 0)
+        echo "Blacklist: $NEW нод (из $(wc -l < igor-all.txt))"
+        
+        if [ $NEW -gt $OLD ] || [ $NEW -gt 300 ]; then
+          git config user.name "Blacklist-Bot"
+          git config user.email "bot@github.com"
+          git add reality-mobile.txt
+          git commit -m "🖤 Blacklist: $NEW нод (no RU/AM)" || exit 0
+          git push
+        fi
