@@ -1,0 +1,29 @@
+name: TOP-7 EU Allowlist
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  top7:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: TOP-7 EU filter
+      run: |
+        curl -sL https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt > igor-all.txt
+        
+        # 🔥 ТОП-7: NL+DE+FI+HU+ES+SE
+        grep -E "(🇳🇱|Netherlands|🇩🇪|Germany|🇫🇮|Finland|🇭🇺|Hungary|🇪🇸|Spain|🇸🇪|Sweden)" igor-all.txt > reality-mobile.txt
+        
+        NEW=$(wc -l < reality-mobile.txt)
+        echo "TOP-7 EU: $NEW нод"
+        
+        if [ $NEW -gt 100 ]; then
+          git config user.name "TOP7-EU-Bot"
+          git config user.email "bot@github.com"
+          git add reality-mobile.txt
+          git commit -m "🇳🇱🇩🇪🇫🇮 TOP-7: $NEW нод" || exit 0
+          git push
+        fi
