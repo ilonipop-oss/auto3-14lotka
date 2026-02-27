@@ -1,9 +1,15 @@
-# 📱 LTE Tolerance Tester
+# Auto3-14lotka 🚀 Mobile Clash Reality
 
-**Импорт:** `https://raw.githubusercontent.com/ilonipop-oss/auto3-14lotka/main/multi-tolerance.yaml`
+## 📱 Мобильный Git + 156 NL/DE Reality нод
+- Oukitel WP35 Termux → git push без паролей  
+- ПК Arch → cron каждые 30мин
+- GitHub Pages → https://ilonipop-oss.github.io/auto3-14lotka/reality-mobile.txt
 
-**Режимы:**
-- ⚡ FAST (50ms) — игры/4K
-- 🧠 STABLE (150ms) — TG/браузер
-- 🐌 ROCK (300ms) — фон
-# Mobile: Clash Party 380 нод Thu Feb 26 23:09:04 +07 2026
+## 🌐 Статус:
+- 156 Reality нод (NL 79%, Германия 58мб/с)
+- EU-TOP7-222ms tolerance
+- Yandex/VK → DIRECT
+
+## 📡 Использование:
+Телефон: ~/clash-push.sh
+ПК: ./update-mobile.sh
