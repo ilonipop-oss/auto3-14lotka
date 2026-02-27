@@ -1,15 +1,34 @@
-# Auto3-14lotka 🚀 Mobile Clash Reality
+# Auto3-14lotka 🚀 Германия/Нидерланды 47мб/с
 
-## 📱 Мобильный Git + 156 NL/DE Reality нод
-- Oukitel WP35 Termux → git push без паролей  
-- ПК Arch → cron каждые 30мин
-- GitHub Pages → https://ilonipop-oss.github.io/auto3-14lotka/reality-mobile.txt
+Дорогой друг! 🤝
 
-## 🌐 Статус:
-- 156 Reality нод (NL 79%, Германия 58мб/с)
-- EU-TOP7-222ms tolerance
-- Yandex/VK → DIRECT
+**Я долго работал над системой — и ВОТ РЕЗУЛЬТАТ:**
 
-## 📡 Использование:
-Телефон: ~/clash-push.sh
-ПК: ./update-mobile.sh
+🇩🇪 **Германия/🇳🇱 Нидерланды**  
+✅ Система прошла тесты  
+⚡ **47мб/с вместо 240кбит**  
+
+🤓 **156 Reality нод NL/DE**  
+✅ **Yandex/VK → DIRECT** (мгновенно)  
+
+## 🎯 Всё что нужно (2 ссылки):
+
+**📱 Бесплатный прокси-клиент Android:**
+- [GitHub APK](https://github.com/Fndroid/clash_for_android_ng/releases)  
+- [F-Droid](https://f-droid.org/packages/com.github.metacubex.clash.meta)
+
+**⚡ Ссылка для добавления профиля (1 клик):**
+https://raw.githubusercontent.com/ilonipop-oss/auto3-14lotka/main/multi-tolerance.yaml
+
+
+## 🚀 3 КЛИКА = ИНТЕРНЕТ ЛЕТАЕТ:
+1. **Скачай клиент** (выше)  
+2. **Импорт** ← вставь ссылку  
+3. **START** → **MOBILE selector** → **Германия!**
+
+**Автообновление 24/7.** Ноды всегда свежие.
+
+**Зацени результат моей работы.** Буду рад, если попробуешь! 😉
+
+---
+**📡 Ноды LIVE:** https://ilonipop-oss.github.io/auto3-14lotka/reality-mobile.txt
