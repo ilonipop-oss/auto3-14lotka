@@ -1,7 +1,7 @@
 name: Igorёk WHITE-CIDR (No RU/AM) 30min
 on:
   schedule:
-    - cron: '*/30 * * * *'  # КАЖДЫЕ 30 МИНУТ ⚡
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -9,17 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Filter Igorёk (No RU/AM)
       run: |
         curl -sL https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt > igor-all.txt
-        
-        grep -vE "(🇷🇺|🇷🇺|🇦🇲|Russia|Armenia|rostelecom|mts|beeline|МТС|Билайн|telecom)" igor-all.txt > filtered-igor.txt
-        
+        grep -vE "(🇷🇺|🇦🇲|Russia|Armenia|rostelecom|mts|beeline|МТС|Билайн)" igor-all.txt > filtered-igor.txt
         NEW_LINES=$(wc -l < filtered-igor.txt)
         OLD_LINES=$(wc -l < reality-mobile.txt 2>/dev/null || echo 0)
-        
-        echo "Всего: $(wc -l < igor-all.txt), после фильтра: $NEW_LINES"
+        echo "Всего: $(wc -l < igor-all.txt), фильтр: $NEW_LINES"
         
         if [ "$NEW_LINES" -gt "$OLD_LINES" ]; then
           mv filtered-igor.txt reality-mobile.txt
