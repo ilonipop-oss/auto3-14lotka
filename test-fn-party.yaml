@@ -1,0 +1,53 @@
+proxies:
+  - name: "🇳🇱 NL-001"
+    type: vless
+    server: 51.250.41.20
+    port: 443
+    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: Wo4XW_RPWDMoOvLYVpm3xaELpl6m8-pDQKR6fIg91VQ
+      short-id: a6a75cbb895d3446
+    client-fingerprint: chrome
+    servername: yandex.ru
+
+  - name: "🇫🇮 FI-002"
+    type: vless
+    server: 51.250.35.106
+    port: 443
+    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
+    network: tcp
+    tls: true
+    reality-opts:
+      public-key: e8MLXUYkjVPDj25WbgC1-ReUkvYZU95moZEmCoVgbC4
+      short-id: a6a75cbb895d3446
+    client-fingerprint: chrome
+    servername: ads.x5.ru
+
+  - name: "🇫🇮 FI-GRPC"
+    type: vless
+    server: 51.250.3.71
+    port: 445
+    uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
+    network: grpc
+    tls: true
+    reality-opts:
+      public-key: zJgJvGF1lhEJVaxP_JYIlaq-acVOk0n2RHiha-YClis
+      short-id: 80de5257edd537c8
+    client-fingerprint: chrome
+    servername: ads.x5.ru
+    grpc-service-name: grpc
+
+proxy-groups:
+  - name: "🚀 Mihomo-Party-TOP3"
+    type: select
+    proxies:
+      - "🇳🇱 NL-001"
+      - "🇫🇮 FI-002" 
+      - "🇫🇮 FI-GRPC"
+      - DIRECT
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - MATCH,🚀 Mihomo-Party-TOP3
