@@ -1,25 +1,25 @@
 proxies:
-  - name: "EU1"
+  - name: EU1
     type: vless
     server: 51.250.41.20
     port: 443
-    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
+    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
     network: tcp
     tls: true
-  - name: "EU2"
+  - name: EU2
     type: vless
     server: 51.250.35.106
     port: 443
-    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
+    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
     network: tcp
     tls: true
 
 proxy-groups:
-  - name: "EU-SELECT"
+  - name: EU-SELECT
     type: select
     proxies:
-      - "EU1"
-      - "EU2"
+      - EU1
+      - EU2
       - DIRECT
 
 rules:
