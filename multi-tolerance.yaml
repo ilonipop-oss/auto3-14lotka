@@ -28,6 +28,7 @@ rules:
   
   # ✅ ВСЁ ОСТАЛЬНОЕ → ПРОКСИ
   - MATCH,MOBILE
+<<<<<<< HEAD
 proxy-groups:
   - name: "🚀 EU-TOP7-SELECT"
     type: select
@@ -50,6 +51,7 @@ git push origin dev
 
 #== EU-TOP7 == Авто от Игоря (ПК cron)
 proxies:
+
 
 
 
