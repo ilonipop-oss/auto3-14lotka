@@ -1,55 +1,6 @@
 proxies:
-  - name: "🇦🇱 Albania-YA"
-    type: vless
-    server: 51.250.41.20
-    port: 443
-    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: Wo4XW_RPWDMoOvLYVpm3xaELpl6m8-pDQKR6fIg91VQ
-      short-id: a6a75cbb895d3446
-    client-fingerprint: chrome
-    servername: yandex.ru
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-
-  - name: "🇫🇮 Finland-X5"
-    type: vless
-    server: 51.250.35.106
-    port: 443
-    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
-    network: tcp
-    tls: true
-    reality-opts:
-      public-key: e8MLXUYkjVPDj25WbgC1-ReUkvYZU95moZEmCoVgbC4
-      short-id: a6a75cbb895d3446
-    client-fingerprint: chrome
-    servername: ads.x5.ru
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-
-  - name: "🇫🇮 Finland-GRPC"
-    type: vless
-    server: 51.250.3.71
-    port: 445
-    uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
-    network: grpc
-    tls: true
-    reality-opts:
-      public-key: zJgJvGF1lhEJVaxP_JYIlaq-acVOk0n2RHiha-YClis
-      short-id: 80de5257edd537c8
-    client-fingerprint: chrome
-    servername: ads.x5.ru
-    grpc-opts:
-      grpc-service-name: grpc
-    skip-cert-verify: true
-
 proxy-groups:
-  - name: "🚀 Igor-EU-TOP3"
+  - name: "🚀 Igor-EU-AUTO"
     type: select
     proxies:
-      - "🇦🇱 Albania-YA"
-      - "🇫🇮 Finland-X5"
-      - "🇫🇮 Finland-GRPC"
       - DIRECT
