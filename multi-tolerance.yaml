@@ -51,6 +51,7 @@ git push origin dev
 #== EU-TOP7 == Авто от Игоря (ПК cron)
 proxies:
 
+
 # EU-TOP7 от Игоря (ПК cron)
 proxies:
   - name: "🚀 EU-Finland-1"
