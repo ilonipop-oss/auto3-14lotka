@@ -25,7 +25,7 @@ proxies:
     client-fingerprint: chrome
     servername: ads.x5.ru
 
-  - name: "🇫🇮 Finland-GRPC" 
+  - name: "🇫🇮 Finland-GRPC"
     type: vless
     server: 51.250.3.71
     port: 445
@@ -47,3 +47,24 @@ proxy-groups:
       - "🇫🇮 Finland-X5"
       - "🇫🇮 Finland-GRPC"
       - DIRECT
+
+  - name: "🌍 AUTO-SELECT"
+    type: url-test
+    proxies:
+      - "🚀 Igor-EU-TOP3"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+proxy-providers:
+  igor-eu:
+    type: http
+    url: "https://raw.githubusercontent.com/ilonipop-oss/auto3-14lotka/dev/test-fn-1.yaml"
+    path: ./providers/igor-eu.yaml
+    interval: 3600
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN,youtube.com,🚀 Igor-EU-TOP3
+  - DOMAIN,google.com,🚀 Igor-EU-TOP3
+  - MATCH,🚀 Igor-EU-TOP3
