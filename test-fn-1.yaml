@@ -1,5 +1,5 @@
 proxies:
-  - name: "EU001-51.250.41.20"
+  - name: "EU001-51.250.4"
     type: vless
     server: 51.250.41.20
     port: 443
@@ -7,7 +7,15 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU002-51.250.35.106"
+  - name: "EU002-212.233."
+    type: vless
+    server: 212.233.121.49
+    port: 443
+    uuid: 0549890f-e9aa-425f-b8af-f0154490fb84
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU003-51.250.3"
     type: vless
     server: 51.250.35.106
     port: 443
@@ -15,7 +23,39 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU003-109.120.188.156"
+  - name: "EU004-51.250.3"
+    type: vless
+    server: 51.250.3.71
+    port: 443
+    uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU005-51.250.3"
+    type: vless
+    server: 51.250.3.71
+    port: 443
+    uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU006-51.250.6"
+    type: vless
+    server: 51.250.64.246
+    port: 443
+    uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU007-51.250.6"
+    type: vless
+    server: 51.250.64.246
+    port: 443
+    uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU008-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -23,7 +63,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU004-109.120.189.142"
+  - name: "EU009-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -31,7 +71,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU005-109.120.189.142"
+  - name: "EU010-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -39,7 +79,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU006-109.120.189.142"
+  - name: "EU011-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -47,7 +87,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU007-37.139.33.125"
+  - name: "EU012-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -55,7 +95,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU008-5.188.141.131"
+  - name: "EU013-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -63,7 +103,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU009-5.188.141.131"
+  - name: "EU014-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -71,7 +111,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU010-89.208.228.167"
+  - name: "EU015-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -79,7 +119,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU011-89.208.228.167"
+  - name: "EU016-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -87,7 +127,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU012-109.120.188.156"
+  - name: "EU017-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -95,7 +135,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU013-109.120.188.156"
+  - name: "EU018-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -103,7 +143,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU014-109.120.189.142"
+  - name: "EU019-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -111,7 +151,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU015-37.139.33.125"
+  - name: "EU020-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -119,7 +159,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU016-89.208.228.167"
+  - name: "EU021-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -127,7 +167,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU017-109.120.188.156"
+  - name: "EU022-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -135,7 +175,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU018-109.120.188.156"
+  - name: "EU023-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -143,7 +183,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU019-109.120.189.142"
+  - name: "EU024-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -151,7 +191,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU020-37.139.33.125"
+  - name: "EU025-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -159,7 +199,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU021-37.139.33.125"
+  - name: "EU026-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -167,7 +207,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU022-5.188.141.131"
+  - name: "EU027-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -175,7 +215,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU023-5.188.141.131"
+  - name: "EU028-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -183,7 +223,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU024-89.208.228.167"
+  - name: "EU029-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -191,7 +231,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU025-89.208.228.167"
+  - name: "EU030-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -199,7 +239,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU026-109.120.188.156"
+  - name: "EU031-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -207,7 +247,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU027-109.120.189.142"
+  - name: "EU032-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -215,7 +255,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU028-37.139.33.125"
+  - name: "EU033-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -223,7 +263,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU029-89.208.228.167"
+  - name: "EU034-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -231,7 +271,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU030-109.120.188.156"
+  - name: "EU035-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -239,7 +279,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU031-37.139.33.125"
+  - name: "EU036-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -247,7 +287,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU032-37.139.33.125"
+  - name: "EU037-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -255,7 +295,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU033-89.208.228.167"
+  - name: "EU038-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -263,7 +303,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU034-89.208.228.167"
+  - name: "EU039-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -271,7 +311,15 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU035-109.120.188.156"
+  - name: "EU040-51.250.6"
+    type: vless
+    server: 51.250.64.246
+    port: 443
+    uuid: 89c8f8a0-a98c-4091-b91b-f57d228afd29
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU041-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -279,7 +327,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU036-37.139.33.125"
+  - name: "EU042-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -287,7 +335,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU037-109.120.188.156"
+  - name: "EU043-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -295,7 +343,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU038-109.120.189.142"
+  - name: "EU044-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -303,7 +351,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU039-37.139.33.125"
+  - name: "EU045-37.139.3"
     type: vless
     server: 37.139.33.125
     port: 443
@@ -311,7 +359,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU040-5.188.141.131"
+  - name: "EU046-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -319,7 +367,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU041-5.188.141.131"
+  - name: "EU047-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -327,7 +375,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU042-5.188.141.131"
+  - name: "EU048-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -335,7 +383,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU043-89.208.228.167"
+  - name: "EU049-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -343,7 +391,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU044-109.120.188.156"
+  - name: "EU050-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -351,7 +399,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU045-5.188.141.131"
+  - name: "EU051-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -359,7 +407,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU046-5.188.141.131"
+  - name: "EU052-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -367,7 +415,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU047-89.208.228.167"
+  - name: "EU053-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -375,7 +423,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU048-109.120.188.156"
+  - name: "EU054-109.120."
     type: vless
     server: 109.120.188.156
     port: 443
@@ -383,7 +431,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU049-109.120.189.142"
+  - name: "EU055-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -391,7 +439,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU050-109.120.189.142"
+  - name: "EU056-109.120."
     type: vless
     server: 109.120.189.142
     port: 443
@@ -399,7 +447,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU051-5.188.141.131"
+  - name: "EU057-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -407,7 +455,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU052-5.188.141.131"
+  - name: "EU058-5.188.14"
     type: vless
     server: 5.188.141.131
     port: 443
@@ -415,7 +463,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU053-89.208.228.167"
+  - name: "EU059-89.208.2"
     type: vless
     server: 89.208.228.167
     port: 443
@@ -423,7 +471,79 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU054-51.250.17.230"
+  - name: "EU060-95.163.2"
+    type: vless
+    server: 95.163.208.45
+    port: 443
+    uuid: 7c8cabab-a79f-4444-8c80-528c755f002f
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU061-95.163.2"
+    type: vless
+    server: 95.163.208.45
+    port: 443
+    uuid: 7c8cabab-a79f-4444-8c80-528c755f002f
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU062-95.163.2"
+    type: vless
+    server: 95.163.210.159
+    port: 443
+    uuid: 621d5f40-707c-40f0-8b5c-253d38e1d0cb
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU063-95.163.2"
+    type: vless
+    server: 95.163.210.159
+    port: 443
+    uuid: a001c9c4-ece2-4dc1-9658-cbad90fcd2e0
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU064-95.163.2"
+    type: vless
+    server: 95.163.210.159
+    port: 443
+    uuid: 621d5f40-707c-40f0-8b5c-253d38e1d0cb
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU065-151.236."
+    type: vless
+    server: 151.236.114.174
+    port: 443
+    uuid: daa502cb-2c6a-49ee-9f19-a7a1dbb59cb8
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU066-185.130."
+    type: vless
+    server: 185.130.114.116
+    port: 443
+    uuid: daa502cb-2c6a-49ee-9f19-a7a1dbb59cb8
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU067-51.250.7"
+    type: vless
+    server: 51.250.77.188
+    port: 443
+    uuid: daa502cb-2c6a-49ee-9f19-a7a1dbb59cb8
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU068-84.201.1"
+    type: vless
+    server: 84.201.134.173
+    port: 443
+    uuid: daa502cb-2c6a-49ee-9f19-a7a1dbb59cb8
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU069-51.250.1"
     type: vless
     server: 51.250.17.230
     port: 443
@@ -431,7 +551,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU055-158.160.171.167"
+  - name: "EU070-158.160."
     type: vless
     server: 158.160.171.167
     port: 443
@@ -439,7 +559,7 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU056-158.160.171.167"
+  - name: "EU071-158.160."
     type: vless
     server: 158.160.171.167
     port: 443
@@ -447,7 +567,55 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU057-84.201.145.148"
+  - name: "EU072-94.139.2"
+    type: vless
+    server: 94.139.246.243
+    port: 443
+    uuid: 6bc98441-e1e0-4304-8174-a41a91e0cc11
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU073-94.139.2"
+    type: vless
+    server: 94.139.246.243
+    port: 443
+    uuid: 6bc98441-e1e0-4304-8174-a41a91e0cc11
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU074-94.139.2"
+    type: vless
+    server: 94.139.246.243
+    port: 443
+    uuid: 6bc98441-e1e0-4304-8174-a41a91e0cc11
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU075-94.139.2"
+    type: vless
+    server: 94.139.246.243
+    port: 443
+    uuid: fb4cdb25-97f7-4359-b486-c60a60d0c0c2
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU076-84.201.1"
+    type: vless
+    server: 84.201.145.148
+    port: 443
+    uuid: 6bc98441-e1e0-4304-8174-a41a91e0cc11
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU077-178.154."
+    type: vless
+    server: 178.154.202.149
+    port: 443
+    uuid: 9d17ab5d-5cf1-4f0b-a6f2-78a813ef2ffd
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU078-84.201.1"
     type: vless
     server: 84.201.145.148
     port: 443
@@ -455,7 +623,159 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU058-109.120.189.160"
+  - name: "EU079-84.201.1"
+    type: vless
+    server: 84.201.145.148
+    port: 443
+    uuid: fb4cdb25-97f7-4359-b486-c60a60d0c0c2
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU080-84.201.1"
+    type: vless
+    server: 84.201.145.148
+    port: 443
+    uuid: fb4cdb25-97f7-4359-b486-c60a60d0c0c2
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU081-51.250.1"
+    type: vless
+    server: 51.250.14.48
+    port: 443
+    uuid: 381ef483-49f6-4726-97f2-f94fe1f51b4b
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU082-51.250.6"
+    type: vless
+    server: 51.250.69.188
+    port: 443
+    uuid: 4147a4fa-1c4a-4b5f-80f2-71cc509e4d88
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU083-178.154."
+    type: vless
+    server: 178.154.204.211
+    port: 443
+    uuid: 4a97c6b0-82fb-4c8f-b72b-721ab0461d95
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU084-51.250.1"
+    type: vless
+    server: 51.250.14.48
+    port: 443
+    uuid: 7a9d50c1-a80a-46e9-a9de-136377f4836a
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU085-178.154."
+    type: vless
+    server: 178.154.204.211
+    port: 443
+    uuid: 7c0aeca7-754d-43a5-b5d5-2a1c2666f94c
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU086-51.250.1"
+    type: vless
+    server: 51.250.14.48
+    port: 443
+    uuid: 8d1da223-51f9-4ad3-a6a8-74e3c9634004
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU087-51.250.6"
+    type: vless
+    server: 51.250.69.188
+    port: 443
+    uuid: 8f157481-3cda-454a-99bb-0905fc006b85
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU088-178.154."
+    type: vless
+    server: 178.154.204.211
+    port: 443
+    uuid: aa881e4c-5f30-4e10-8ece-a6c5f46bd5f8
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU089-51.250.6"
+    type: vless
+    server: 51.250.69.188
+    port: 443
+    uuid: ba93c94d-ce74-4f89-8ae1-cbaf14df2bf0
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU090-51.250.1"
+    type: vless
+    server: 51.250.14.48
+    port: 443
+    uuid: bb55ec15-1175-482f-b2e2-c6a48d1634d5
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU091-178.154."
+    type: vless
+    server: 178.154.204.211
+    port: 443
+    uuid: e405ef8d-d7a8-4a10-b303-53a77e8e2bec
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU092-84.201.1"
+    type: vless
+    server: 84.201.132.223
+    port: 443
+    uuid: fff6bf71-be84-40cb-ad6e-33480dc48add
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU093-84.201.1"
+    type: vless
+    server: 84.201.132.223
+    port: 443
+    uuid: fff6bf71-be84-40cb-ad6e-33480dc48add
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU094-212.233."
+    type: vless
+    server: 212.233.99.7
+    port: 443
+    uuid: d66aa670-72ee-431c-8fe8-12ab3d2c172f
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU095-212.233."
+    type: vless
+    server: 212.233.99.7
+    port: 443
+    uuid: d66aa670-72ee-431c-8fe8-12ab3d2c172f
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU096-51.250.1"
+    type: vless
+    server: 51.250.14.48
+    port: 443
+    uuid: 642f89f2-e092-4b4f-8e08-8113393a2d86
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU097-51.250.1"
+    type: vless
+    server: 51.250.14.48
+    port: 443
+    uuid: 9d17ab5d-5cf1-4f0b-a6f2-78a813ef2ffd
+    network: tcp
+    tls: true
+    client-fingerprint: chrome
+  - name: "EU098-109.120."
     type: vless
     server: 109.120.189.160
     port: 443
@@ -463,656 +783,16 @@ proxies:
     network: tcp
     tls: true
     client-fingerprint: chrome
-  - name: "EU059-109.120.189.160"
+  - name: "EU099-109.120."
     type: vless
     server: 109.120.189.160
     port: 443
     uuid: 080556c0-0117-07d0-b1d9-3708fa8ab8c4
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU060-5.188.141.18"
-    type: vless
-    server: 5.188.141.18
-    port: 443
-    uuid: 080556c0-0117-07d0-b1d9-3708fa8ab8c4
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU061-5.188.141.18"
-    type: vless
-    server: 5.188.141.18
-    port: 443
-    uuid: 080556c0-0117-07d0-b1d9-3708fa8ab8c4
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU062-109.120.181.41"
-    type: vless
-    server: 109.120.181.41
-    port: 443
-    uuid: 2c15a5c9-1dd9-4989-8d03-29a4ce1d6298
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU063-109.120.189.145"
-    type: vless
-    server: 109.120.189.145
-    port: 443
-    uuid: 642e5ad8-bd76-07d0-8b5c-b4d0628f07bc
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU064-109.120.189.145"
-    type: vless
-    server: 109.120.189.145
-    port: 443
-    uuid: 8e0d168b-f984-07d0-865f-88b9a46fb48f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU065-5.188.141.18"
-    type: vless
-    server: 5.188.141.18
-    port: 443
-    uuid: 8e0d168b-f984-07d0-865f-88b9a46fb48f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU066-5.188.141.18"
-    type: vless
-    server: 5.188.141.18
-    port: 443
-    uuid: 8e0d168b-f984-07d0-865f-88b9a46fb48f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU067-109.120.180.30"
-    type: vless
-    server: 109.120.180.30
-    port: 443
-    uuid: a7b1b295-89c0-4794-bc3b-13af6cf63312
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU068-109.120.180.30"
-    type: vless
-    server: 109.120.180.30
-    port: 443
-    uuid: a7b1b295-89c0-4794-bc3b-13af6cf63312
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU069-109.120.180.30"
-    type: vless
-    server: 109.120.180.30
-    port: 443
-    uuid: a7b1b295-89c0-4794-bc3b-13af6cf63312
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU070-109.120.189.145"
-    type: vless
-    server: 109.120.189.145
-    port: 443
-    uuid: da2d823f-f4e0-07d0-a4f7-f6e2fbeebe0f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU071-109.120.189.145"
-    type: vless
-    server: 109.120.189.145
-    port: 443
-    uuid: da2d823f-f4e0-07d0-a4f7-f6e2fbeebe0f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU072-5.188.141.18"
-    type: vless
-    server: 5.188.141.18
-    port: 443
-    uuid: da2d823f-f4e0-07d0-a4f7-f6e2fbeebe0f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU073-84.201.132.223"
-    type: vless
-    server: 84.201.132.223
-    port: 443
-    uuid: 160d6fae-7449-4c73-8180-04c164ade71f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU074-84.201.132.223"
-    type: vless
-    server: 84.201.132.223
-    port: 443
-    uuid: 160d6fae-7449-4c73-8180-04c164ade71f
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU075-51.250.0.147"
-    type: vless
-    server: 51.250.0.147
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU076-51.250.0.147"
-    type: vless
-    server: 51.250.0.147
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU077-51.250.3.183"
-    type: vless
-    server: 51.250.3.183
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU078-51.250.3.183"
-    type: vless
-    server: 51.250.3.183
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU079-51.250.3.183"
-    type: vless
-    server: 51.250.3.183
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU080-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU081-51.250.80.61"
-    type: vless
-    server: 51.250.80.61
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU082-51.250.83.255"
-    type: vless
-    server: 51.250.83.255
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU083-51.250.87.167"
-    type: vless
-    server: 51.250.87.167
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU084-51.250.87.167"
-    type: vless
-    server: 51.250.87.167
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU085-51.250.87.167"
-    type: vless
-    server: 51.250.87.167
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU086-51.250.90.103"
-    type: vless
-    server: 51.250.90.103
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU087-51.250.90.103"
-    type: vless
-    server: 51.250.90.103
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU088-51.250.90.103"
-    type: vless
-    server: 51.250.90.103
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU089-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU090-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU091-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU092-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU093-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU094-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU095-51.250.65.209"
-    type: vless
-    server: 51.250.65.209
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU096-51.250.65.209"
-    type: vless
-    server: 51.250.65.209
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU097-51.250.65.209"
-    type: vless
-    server: 51.250.65.209
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU098-51.250.83.255"
-    type: vless
-    server: 51.250.83.255
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU099-51.250.87.167"
-    type: vless
-    server: 51.250.87.167
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU100-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU101-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU102-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU103-51.250.0.147"
-    type: vless
-    server: 51.250.0.147
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU104-51.250.0.147"
-    type: vless
-    server: 51.250.0.147
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU105-51.250.3.183"
-    type: vless
-    server: 51.250.3.183
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU106-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU107-51.250.68.142"
-    type: vless
-    server: 51.250.68.142
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU108-51.250.80.61"
-    type: vless
-    server: 51.250.80.61
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU109-51.250.80.61"
-    type: vless
-    server: 51.250.80.61
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU110-51.250.80.61"
-    type: vless
-    server: 51.250.80.61
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU111-51.250.83.255"
-    type: vless
-    server: 51.250.83.255
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU112-51.250.0.147"
-    type: vless
-    server: 51.250.0.147
-    port: 443
-    uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU113-51.250.0.147"
-    type: vless
-    server: 51.250.0.147
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU114-51.250.68.142"
-    type: vless
-    server: 51.250.68.142
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU115-51.250.80.61"
-    type: vless
-    server: 51.250.80.61
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU116-51.250.80.61"
-    type: vless
-    server: 51.250.80.61
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU117-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU118-51.250.65.209"
-    type: vless
-    server: 51.250.65.209
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU119-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU120-51.250.95.176"
-    type: vless
-    server: 51.250.95.176
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU121-51.250.68.142"
-    type: vless
-    server: 51.250.68.142
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU122-51.250.87.167"
-    type: vless
-    server: 51.250.87.167
-    port: 443
-    uuid: b7dd5972-263a-4331-8ee5-c747e773b434
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU123-95.163.210.173"
-    type: vless
-    server: 95.163.210.173
-    port: 443
-    uuid: 72adc5b8-146a-4bfe-921b-5c9e1df016e0
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU124-178.154.224.33"
-    type: vless
-    server: 178.154.224.33
-    port: 443
-    uuid: 400c1f85-9d3a-444a-8a50-81b11f3b4c20
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU125-178.154.224.33"
-    type: vless
-    server: 178.154.224.33
-    port: 443
-    uuid: 400c1f85-9d3a-444a-8a50-81b11f3b4c20
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU126-84.201.128.76"
-    type: vless
-    server: 84.201.128.76
-    port: 443
-    uuid: 400c1f85-9d3a-444a-8a50-81b11f3b4c20
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU127-84.201.128.76"
-    type: vless
-    server: 84.201.128.76
-    port: 443
-    uuid: 400c1f85-9d3a-444a-8a50-81b11f3b4c20
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU128-51.250.0.147"
-    type: vless
-    server: 51.250.0.147
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU129-51.250.3.183"
-    type: vless
-    server: 51.250.3.183
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU130-51.250.3.183"
-    type: vless
-    server: 51.250.3.183
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU131-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU132-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU133-51.250.4.119"
-    type: vless
-    server: 51.250.4.119
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU134-51.250.65.209"
-    type: vless
-    server: 51.250.65.209
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU135-51.250.65.209"
-    type: vless
-    server: 51.250.65.209
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU136-51.250.68.142"
-    type: vless
-    server: 51.250.68.142
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU137-51.250.68.142"
-    type: vless
-    server: 51.250.68.142
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU138-51.250.68.142"
-    type: vless
-    server: 51.250.68.142
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
-    network: tcp
-    tls: true
-    client-fingerprint: chrome
-  - name: "EU139-51.250.80.61"
-    type: vless
-    server: 51.250.80.61
-    port: 443
-    uuid: 64aafe63-ef36-4da5-8bf9-838d767bfe74
     network: tcp
     tls: true
     client-fingerprint: chrome
 proxy-groups:
-  - name: "🚀 Igor-EU-001-050"
+  - name: "🚀 Igor-EU-1-33"
     type: select
     proxies:
       - EU001-*
@@ -1148,6 +828,10 @@ proxy-groups:
       - EU031-*
       - EU032-*
       - EU033-*
+      - DIRECT
+  - name: "🚀 Igor-EU-34-66"
+    type: select
+    proxies:
       - EU034-*
       - EU035-*
       - EU036-*
@@ -1165,9 +849,6 @@ proxy-groups:
       - EU048-*
       - EU049-*
       - EU050-*
-  - name: "🚀 Igor-EU-051-100"
-    type: select
-    proxies:
       - EU051-*
       - EU052-*
       - EU053-*
@@ -1184,6 +865,10 @@ proxy-groups:
       - EU064-*
       - EU065-*
       - EU066-*
+      - DIRECT
+  - name: "🚀 Igor-EU-67-99"
+    type: select
+    proxies:
       - EU067-*
       - EU068-*
       - EU069-*
@@ -1217,104 +902,19 @@ proxy-groups:
       - EU097-*
       - EU098-*
       - EU099-*
-      - EU100-*
-      - EU101-*
-      - EU102-*
-      - EU103-*
-      - EU104-*
-      - EU105-*
-      - EU106-*
-      - EU107-*
-      - EU108-*
-      - EU109-*
-      - EU110-*
-      - EU111-*
-      - EU112-*
-      - EU113-*
-      - EU114-*
-      - EU115-*
-      - EU116-*
-      - EU117-*
-      - EU118-*
-      - EU119-*
-      - EU120-*
-      - EU121-*
-      - EU122-*
-      - EU123-*
-      - EU124-*
-      - EU125-*
-      - EU126-*
-      - EU127-*
-      - EU128-*
-      - EU129-*
-      - EU130-*
-      - EU131-*
-      - EU132-*
-      - EU133-*
-      - EU134-*
-      - EU135-*
-      - EU136-*
-      - EU137-*
-      - EU138-*
-      - EU139-*
-      - EU140-*
-      - EU141-*
-      - EU142-*
-      - EU143-*
-      - EU144-*
-      - EU145-*
-      - EU146-*
-      - EU147-*
-      - EU148-*
-      - EU149-*
-      - EU150-*
-      - EU151-*
-      - EU152-*
-      - EU153-*
-      - EU154-*
-      - EU155-*
-      - EU156-*
-      - EU157-*
-      - EU158-*
-      - EU159-*
-      - EU160-*
-      - EU161-*
-      - EU162-*
-      - EU163-*
-      - EU164-*
-      - EU165-*
-      - EU166-*
-      - EU167-*
-      - EU168-*
-      - EU169-*
-      - EU170-*
-      - EU171-*
-      - EU172-*
-      - EU173-*
-      - EU174-*
-      - EU175-*
-      - EU176-*
-      - EU177-*
-      - EU178-*
-      - EU179-*
-      - EU180-*
-      - EU181-*
-      - EU182-*
-      - EU183-*
-      - EU184-*
-      - EU185-*
-      - EU186-*
-      - EU187-*
-      - EU188-*
-      - EU189-*
-      - EU190-*
-      - EU191-*
-      - EU192-*
-      - EU193-*
-      - EU194-*
-      - EU195-*
-      - EU196-*
-      - EU197-*
-      - EU198-*
-      - EU199-*
-      - EU200-*
+      - DIRECT
+  - name: "🌍 Igor-AUTO-100"
+    type: url-test
+    proxies:
+      - "🚀 Igor-EU-1-33"
+      - "🚀 Igor-EU-34-66"
+      - "🚀 Igor-EU-67-99"
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,youtube.com,🌍 Igor-AUTO-100
+  - DOMAIN-SUFFIX,google.com,🌍 Igor-AUTO-100
+  - MATCH,🌍 Igor-AUTO-100
