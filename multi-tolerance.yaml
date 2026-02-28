@@ -1,3 +1,8 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+
 proxies:
   - name: EU1
     type: vless
@@ -15,7 +20,7 @@ proxies:
     tls: true
 
 proxy-groups:
-  - name: EU-SELECT
+  - name: "EU-SELECT"
     type: select
     proxies:
       - EU1
@@ -23,4 +28,7 @@ proxy-groups:
       - DIRECT
 
 rules:
+  - DOMAIN-SUFFIX,google.com,EU-SELECT
+  - DOMAIN-SUFFIX,youtube.com,EU-SELECT
+  - GEOIP,RU,DIRECT
   - MATCH,EU-SELECT
