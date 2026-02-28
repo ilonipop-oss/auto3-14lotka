@@ -1,14 +1,15 @@
-name: TOP-7 EU Allowlist
+name: TOP-7 EU Classic
 on: [workflow_dispatch]
 jobs:
-  filter:
+  top7:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - run: |
-        grep -vE "(51\.250|95\.163|178\.154|146\.185|5\.188|87\.245|37\.140|94\.100|109\.248|185\.|rostelecom|mts|beeline|МТС|Билайн|kz|lt|lv|ee|by|uz|kg|tm|az|mos|msk|spb|vkcloud|selectel|\.ru$)" reality-mobile.txt > eu-top7.txt
-        echo "EU Clean: $(wc -l < eu-top7.txt)"
+        grep -vE "(🇷🇺|🇦🇲|rostelecom|mts|beeline|МТС|Билайн|vkcloud|selectel|\.ru$)" reality-mobile.txt | head -7 > eu-top7.txt
+        echo "TOP-7 EU: $(wc -l < eu-top7.txt)"
+        cat eu-top7.txt
     - uses: actions/upload-artifact@v4
       with:
-        name: eu-top7-clean
+        name: eu-top7-classic
         path: eu-top7.txt
