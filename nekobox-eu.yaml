@@ -1,0 +1,28 @@
+proxies:
+  - name: "🇫🇮 EU1-Finland"
+    type: vless
+    server: 51.250.41.20
+    port: 443
+    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
+    network: tcp
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  
+  - name: "🇫🇮 EU2-Finland"
+    type: vless
+    server: 51.250.35.106
+    port: 443
+    uuid: 22fc4701-8c86-4d4f-a858-8f5921d83977
+    network: tcp
+    tls: true
+    skip-cert-verify: true
+    udp: true
+
+proxy-groups:
+  - name: "🚀 EU-TOP7"
+    type: select
+    proxies:
+      - "🇫🇮 EU1-Finland"
+      - "🇫🇮 EU2-Finland"
+      - DIRECT
