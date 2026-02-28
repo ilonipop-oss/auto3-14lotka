@@ -1,105 +1,26 @@
-proxy-providers:
-  reality_top7:
-    type: http
-    url: "https://ilonipop-oss.github.io/auto3-14lotka/reality-mobile.txt"
-    interval: 1800
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
+proxies:
+  - name: "EU-Finland-1"
+    type: vless
+    server: 51.250.41.20
+    port: 443
+    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
+    network: tcp
+    tls: true
+  - name: "EU-Finland-2"
+    type: vless
+    server: 51.250.35.106
+    port: 443
+    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
+    network: tcp
+    tls: true
 
 proxy-groups:
-  - name: "EU-TOP7-222ms"
-    type: url-test
-    tolerance: 222
-    interval: 600
-    use: [reality_top7]
-
-  - name: "MOBILE"
+  - name: "EU-TOP7-SELECT"
     type: select
     proxies:
-      - "EU-TOP7-222ms"
+      - "EU-Finland-1"
+      - "EU-Finland-2"
+      - DIRECT
 
 rules:
-  # ✅ РОССИЙСКИЕ СЕРВИСЫ → ДИРЕКТ (скорость!)
-  - DOMAIN-SUFFIX,yandex.ru,DIRECT
-  - DOMAIN-SUFFIX,vk.com,DIRECT
-  - DOMAIN-SUFFIX,mail.ru,DIRECT
-  
-  # ✅ ВСЁ ОСТАЛЬНОЕ → ПРОКСИ
-  - MATCH,MOBILE
-<<<<<<< HEAD
-proxy-groups:
-  - name: "🚀 EU-TOP7-SELECT"
-    type: select
-    proxies:
-      - "EU-1"
-      - "EU-2" 
-      - "EU-3"
-      - DIRECT
-#== END-EU-TOP7 ==
-EOF'
-
-rm eu-top3.txt
-
-git config user.email "poco-router@pc"
-git config user.name "PC-Auto"
-git add multi-tolerance.yaml
-git commit -m "🤖 EU-TOP7 auto $(date +%H:%M')" || exit 0
-git push origin dev
-
-
-#== EU-TOP7 == Авто от Игоря (ПК cron)
-proxies:
-
-
-
-
-
-# EU-TOP7 от Игоря (ПК cron)
-proxies:
-  - name: "🚀 EU-Finland-1"
-    type: vless
-    server: 51.250.41.20
-    port: 443
-    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
-    network: tcp
-    tls: true
-  - name: "🚀 EU-Finland-2" 
-    type: vless
-    server: 51.250.35.106
-    port: 443
-    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
-    network: tcp
-    tls: true
-proxy-groups:
-  - name: "🚀 EU-TOP7-SELECT"
-    type: select
-    proxies:
-      - "🚀 EU-Finland-1"
-      - "🚀 EU-Finland-2"
-      - DIRECT
-# END-EU-TOP7
-proxies:
-  - name: "🚀 EU-Finland-1"
-    type: vless
-    server: 51.250.41.20
-    port: 443
-    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
-    network: tcp
-    tls: true
-  - name: "🚀 EU-Finland-2"
-    type: vless
-    server: 51.250.35.106
-    port: 443
-    uuid: "22fc4701-8c86-4d4f-a858-8f5921d83977"
-    network: tcp
-    tls: true
-
-proxy-groups:
-  - name: "🚀 EU-TOP7-SELECT"
-    type: select
-    proxies:
-      - "🚀 EU-Finland-1"
-      - "🚀 EU-Finland-2"
-      - DIRECT
+  - MATCH,EU-TOP7-SELECT
